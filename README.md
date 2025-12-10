@@ -1,7 +1,7 @@
-# Личный проект <Cat Energy»
+# Личный проект «Cat Energy»
 
 * Студент: [Nikolai Levchenko](https://htmlacademy.ru/profile/id2676009).
-* Сайт: [Мой проект «Седона»](https://nilevforce.github.io/htmlacademy-cat-energy)
+* Сайт: [Мой проект «Cat Energy»](https://nilevforce.github.io/htmlacademy-cat-energy)
 ---
 
 **Обратите внимание, что папка с вашими исходными файлами для работы над проектом — `source/`.**
