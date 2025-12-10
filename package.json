@@ -2,7 +2,7 @@
   "name": "CatEnergy",
   "version": "2.0.7",
   "private": true,
-  "description": "Личный проект «Cat Enegry» от HTML Academy",
+  "description": "Личный проект «CatEnergy» от HTML Academy",
   "type": "module",
   "engines": {
     "node": "^18.18 || ^20.9"
