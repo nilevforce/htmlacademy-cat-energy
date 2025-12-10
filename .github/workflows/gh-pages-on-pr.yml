@@ -1,13 +1,13 @@
-name: Deploy on pull request
+name: Deploy on main
 
 on:
-  pull_request_target:
+  push:
     branches:
-      - '*'
+      - main
 
 jobs:
-  deploy-on-pull-request:
-    name: Deploy on Pull Request
+  deploy-on-main:
+    name: Deploy on main
 
     permissions:
       contents: write
@@ -15,11 +15,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-
       - name: Checkout
         uses: actions/checkout@v4
-        with:
-          ref: 'refs/pull/${{ github.event.pull_request.number }}/merge'
 
       - name: Setup Node
         uses: actions/setup-node@v4
@@ -44,4 +41,4 @@ jobs:
         with:
           folder: ./build
           branch: gh-pages
-          target-folder: ${{ github.event.pull_request.number }}
+          # target-folder больше нет — всё идёт в корень gh-pages
