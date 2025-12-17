@@ -1,0 +1,40 @@
+.roadmap__title {
+  font-family: $font-secondary;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 60px;
+}
+
+.roadmap__item-icon {
+  width: 80px;
+  height: 80px;
+  background-color: #68b738;
+
+  &--leaf {
+    background-image: url("../../icons/stack.svg#leaf");
+    background-size: 30px 32px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--boiled-water {
+    background-image: url("../../icons/stack.svg#boiled-water");
+    background-size: 26px 29px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--tableware {
+    background-image: url("../../icons/stack.svg#tableware");
+    background-size: 25px 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--alarm {
+    background-image: url("../../icons/stack.svg#alarm");
+    background-size: 26px 31px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
