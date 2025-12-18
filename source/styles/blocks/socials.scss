@@ -1,0 +1,31 @@
+.socials__link {
+  display: inline-block;
+
+  &::before {
+    display: inline-block;
+    width: 28px;
+    height: 22px;
+    content: "";
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 28px 22px;
+    background-color: #666666;
+  }
+
+  &:hover::before {
+    background-color: #68b738;
+  }
+
+  // Соцсети
+  &--vk::before {
+    mask-image: url("../../icons/stack.svg#vkontakte");
+  }
+
+  &--youtube::before {
+    mask-image: url("../../icons/stack.svg#youtube");
+  }
+
+  &--telegram::before {
+    mask-image: url("../../icons/stack.svg#telegram");
+  }
+}
