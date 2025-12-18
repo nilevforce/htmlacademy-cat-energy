@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Каталог</title>
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
@@ -15,12 +15,20 @@
 
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo logo" href="#">
-      <img class="logo__image logo__image--icon" src="#" width="70" height="60" alt="" aria-hidden="true">
-      <img class="logo__image logo__image--text" src="#" width="118" height="21" alt="Cat Energy.">
+    <a class="main-header__logo logo" href="index.html" aria-label="Главная страница">
+      <picture>
+        <source media="(min-width: 1440px)" srcset="images/logo-pic.svg" type="image/svg+xml" width="70" height="59">
+        <source media="(min-width: 768px)" srcset="images/logo-pic.svg" type="image/svg+xml" width="60" height="50">
+        <img class="logo__icon" src="images/logo-pic.svg" width="33" height="38" alt="" aria-hidden="true">
+      </picture>
+
+      <picture>
+        <source media="(min-width: 1440px)" srcset="images/logo-text.svg" type="image/svg+xml" width="118" height="21">
+        <img class="logo__text" src="images/logo-text.svg" width="101" height="18" alt="Cat Energy.">
+      </picture>
     </a>
     <nav class="main-nav">
-      <button class="main-nav__toggle button button--burger" type="button">
+      <button class="main-nav__toggle button-burger" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <ul class="main-nav__list site-list">
@@ -227,6 +235,7 @@
 
         <li class="catalog__item">
           <div class="load-more-card">
+            <span class="load-more-card__image"></span>
             <h3 class="load-more-card__title">Показать еще 100500 товаров</h3>
             <p class="load-more-card__description">На самом деле вкусов гораздо больше!</p>
             <button class="load-more-card__button button" type="button">Показать все</button>
@@ -307,6 +316,7 @@
         </li>
       </ul>
       <div class="related-goods__promo">
+        <span class="related-goods__promo-icon"></span>
         <p class="related-goods__promo-text">Закажите все и получите чехол для кота в подарок!</p>
       </div>
     </section>
@@ -338,8 +348,8 @@
   </main>
 
   <footer class="main-footer">
-    <a class="main-footer__logo logo" href="#">
-      <img class="logo__image logo__image--text" src="#" width="128" height="24" alt="Cat Energy.">
+    <a class="main-footer__logo logo" href="index.html">
+      <img class="logo__image logo__image--text" src="images/logo-text.svg" width="128" height="24" alt="Cat Energy.">
     </a>
 
     <section class="main-footer__socials socials">
@@ -366,7 +376,7 @@
     <div class="main-footer__developer">
       <a class="developer-logo" href="#">
         <span class="developer-logo__text">HTML Academy</span>
-        <img class="developer-logo__icon" width="27" height="34" src="#" alt="Логотип HTML Academy." aria-hidden="true">
+        <span class="developer-logo__icon" aria-hidden="true"></span>
       </a>
     </div>
   </footer>

@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Cat Energy</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="favicons/180.png">
@@ -83,19 +83,19 @@
       <h2 class="roadmap__title">Как это работает</h2>
       <ol class="roadmap__list">
         <li class="roadmap__item">
-          <div class="roadmap__item-icon roadmap__item-icon--leaf"></div>
+          <span class="roadmap__item-icon roadmap__item-icon--leaf" aria-hidden="true"></span>
           <p class="roadmap__item-text">Функциональное питание содержит только полезные питательные вещества.</p>
         </li>
         <li class="roadmap__item">
-          <div class="roadmap__item-icon roadmap__item-icon--boiled-water"></div>
+          <span class="roadmap__item-icon roadmap__item-icon--boiled-water" aria-hidden="true"></span>
           <p class="roadmap__item-text">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
         </li>
         <li class="roadmap__item">
-          <div class="roadmap__item-icon roadmap__item-icon--tableware"></div>
+          <span class="roadmap__item-icon roadmap__item-icon--tableware" aria-hidden="true"></span>
           <p class="roadmap__item-text">Замените один-два приема обычной еды на наше функциональное питание.</p>
         </li>
         <li class="roadmap__item">
-          <div class="roadmap__item-icon roadmap__item-icon--alarm"></div>
+          <span class="roadmap__item-icon roadmap__item-icon--alarm" aria-hidden="true"></span>
           <p class="roadmap__item-text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
         </li>
       </ol>
@@ -129,6 +129,10 @@
           <source type="image/png" media="(min-width: 748px)" srcset="./images/cat-after-tablet@1x.png, ./images/cat-after-tablet@2x.png 2x" width="560" height="512">
           <img class="slider-compare__image slider-compare__image--after" src="./images/cat-after-mobile@1x.png" srcset="./images/cat-after-mobile@2x.png 2x" alt="Кот после изменений." width="280" height="256">
         </picture>
+
+        <button class="slider-compare__button" type="button">
+          <span class="visually-hidden">Управление слайдером</span>
+        </button>
       </div>
     </section>
 
@@ -149,7 +153,7 @@
   </main>
 
   <footer class="main-footer">
-    <a class="main-footer__logo logo" href="#">
+    <a class="main-footer__logo logo" href="index.html">
       <img class="logo__image logo__image--text" src="images/logo-text.svg" width="128" height="24" alt="Cat Energy.">
     </a>
 
