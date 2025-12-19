@@ -1,23 +1,50 @@
 .stats__title {
   font-family: $font-secondary;
   font-weight: 400;
-  font-size: 60px;
-  line-height: 60px;
+  font-size: 36px;
+  line-height: 40px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+.stats__description {
+  font-size: 14px;
+  line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.stats__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .stats__term {
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;
+  color: #444444;
   text-transform: lowercase;
 }
 
 .stats__value {
   font-family: $font-secondary;
   font-weight: 400;
-  font-size: 30px;
-  line-height: 37px;
+  font-size: 24px;
+  line-height: 24px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .stats__item {
@@ -25,9 +52,15 @@
     .stats__term {
       font-family: $font-secondary;
       font-weight: 400;
-      font-size: 20px;
+      font-size: 14px;
       line-height: 20px;
+      color: #000000;
       text-transform: uppercase;
+
+      @media (min-width: $tablet-width) {
+        font-size: 20px;
+        line-height: 20px;
+      }
     }
   }
 }

@@ -1,0 +1,16 @@
+.button-burger {
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-image: url("../../icons/stack.svg#button-burger");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.button-burger.is-open {
+  background-image: url("../../icons/stack.svg#button-close");
+}
