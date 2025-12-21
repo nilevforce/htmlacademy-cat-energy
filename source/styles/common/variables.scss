@@ -5,6 +5,10 @@ $font-primary: "Lato", "Arial", sans-serif;
 $font-secondary: "Oswald", "Arial", sans-serif;
 
 // Breakpoints
-$desktop-width: 1440px;
-$tablet-width: 768px;
 $mobile-width: 320px;
+$tablet-width: 768px;
+$desktop-width: 1440px;
+
+$mobile-width-max: $tablet-width - 1;
+$tablet-width-max: $desktop-width - 1;
+

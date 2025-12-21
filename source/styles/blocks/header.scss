@@ -1,13 +1,21 @@
-header {
+.header__body {
   position: relative;
 }
 
-.header__inner {
+.header__body-inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
   min-height: 64px;
   padding: 14px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 25px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 55px 0;
+  }
 }
 
 .header__logo {
@@ -36,7 +44,6 @@ header {
   width: 100%;
   background-color: #ffffff;
 
-
   @media (min-width: $tablet-width) {
     position: static;
     width: auto;
@@ -48,20 +55,12 @@ header {
   flex-direction: column;
   margin: 0;
   padding: 0;
-  font-family: $font-secondary;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 30px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #000000;
   list-style: none;
+
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
-    gap: 33px;
-    font-size: 18px;
-    line-height: 24px;
+    gap: 34px;
   }
 }
 
@@ -69,8 +68,14 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 64px;
   padding: 22px 10px;
+  font-family: $font-secondary;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
   border-bottom: 1px solid #e6e6e6;
 
   &:first-child {
@@ -79,11 +84,19 @@ header {
 
   @media (min-width: $tablet-width) {
     padding: 0;
+    font-size: 18px;
+    line-height: 24px;
     border: none;
 
     &:first-child {
       border: none;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 20px;
+    color: #ffffff;
   }
 }
 
@@ -118,3 +131,4 @@ header {
     display: none;
   }
 }
+

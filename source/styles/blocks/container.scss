@@ -1,6 +1,12 @@
 .container {
+  // max-width: 280px; // Это для тестирования Pixel Perfect
   max-width: 90%;
   margin: auto;
+
+  @media (min-width: $tablet-width) {
+    // max-width: 705px; // Это для тестирования Pixel Perfect
+    max-width: 90%;
+  }
 
   @media (min-width: $desktop-width) {
     max-width: 1220px;
