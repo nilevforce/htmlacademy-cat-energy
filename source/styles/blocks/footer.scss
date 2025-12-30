@@ -1,0 +1,144 @@
+.footer {
+  padding: 40px 0;
+  background-color: $color-ui-1;
+
+  @media (min-width: $tablet-width) {
+    padding: 55px 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 65px 0;
+  }
+}
+
+.footer__inner {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.footer__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-bottom: 20px;
+  text-align: center;
+  border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: $tablet-width) {
+    justify-content: flex-start;
+    padding: 0;
+    border: none;
+  }
+}
+
+.footer__socials-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  width: 100%;
+  margin: 0;
+  padding: 20px 0;
+  border-bottom: 1px solid #d9d9d9;
+  list-style: none;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    border: none;
+  }
+}
+
+.footer__socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__socials-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &::before {
+    width: 28px;
+    height: 22px;
+    content: "";
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 28px 22px;
+    background-color: #666666;
+  }
+
+  &:hover::before {
+    background-color: #68b738;
+  }
+
+  &:active::before {
+    background-color: rgba(#68b738, 0.3);
+  }
+
+  &--vk::before {
+    mask-image: url("../../icons/stack.svg#vkontakte");
+  }
+
+  &--youtube::before {
+    mask-image: url("../../icons/stack.svg#youtube");
+  }
+
+  &--telegram::before {
+    mask-image: url("../../icons/stack.svg#telegram");
+  }
+}
+
+.footer__developer {
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+}
+
+.footer__developer-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  width: 100%;
+  text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    justify-content: flex-end;
+  }
+
+  &:hover .footer__developer-icon {
+    background-color: #68b738;
+  }
+
+  &:active .footer__developer-icon {
+    background-color: rgba(#68b738, 0.3);
+  }
+
+  &:active .footer__developer-text {
+    opacity: 0.3;
+  }
+}
+
+.footer__developer-text {
+  font-size: 16px;
+  line-height: 20px;
+  color: #444444;
+  text-decoration: none;
+}
+
+.footer__developer-icon {
+  width: 27px;
+  height: 34px;
+  background-color: #666666;
+  mask-image: url("../../images/htmlacademy-logo.svg");
+}
+

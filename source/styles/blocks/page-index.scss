@@ -1,5 +1,6 @@
-.header-index {
+.page-index__header {
   position: relative;
+  margin-bottom: 20px;
 
   &::before {
     position: absolute;
@@ -22,12 +23,16 @@
   }
 
   @media (min-width: $tablet-width) {
+    margin: 0;
+
     &::before {
       background-image: none;
     }
   }
 
   @media (min-width: $desktop-width) {
+    margin-bottom: 82px;
+
     &::before {
       position: absolute;
       top: 0;
@@ -48,5 +53,29 @@
       background-repeat: no-repeat;
       background-position: left;
     }
+  }
+}
+
+.page-index__services {
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 70px;
+  }
+}
+
+.page-index__roadmap {
+  margin-bottom: 50px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 70px;
   }
 }
