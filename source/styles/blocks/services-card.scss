@@ -115,15 +115,18 @@
 
 .services-card__description {
   margin: 0;
-  margin-bottom: 23px;
-  padding: 0;
+  margin-bottom: 15px;
+  padding: 0 0 23px;
   font-size: 14px;
   line-height: 18px;
+  border-bottom: 1px solid #d9d9d9;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 48px;
+    padding: 0;
     font-size: 16px;
     line-height: 24px;
+    border-bottom: none;
   }
 
   @media (min-width: $desktop-width) {
@@ -135,6 +138,7 @@
   position: relative;
   min-width: 133px;
   padding: 4px 47px 4px 0;
+  color: #000000;
 
   @media (min-width: $tablet-width) {
     padding: 4px 57px 4px 0;
@@ -147,7 +151,7 @@
     width: 24px;
     height: 22px;
     content: "";
-    background-color: $color-text-2;
+    background-color: #444444;
     mask-image: url("../../icons/stack.svg#arrow");
     transform: translateY(-50%) scaleX(1);
     transform-origin: left;
@@ -163,11 +167,11 @@
   }
 
   &:active {
-    color: rgba($color-text-2, 0.3);
+    color: rgba(#444444, 0.3);
     background-color: transparent;
 
     &::after {
-      background-color: rgba($color-text-2, 0.3);
+      background-color: rgba(#444444, 0.3);
     }
   }
 }

@@ -3,11 +3,9 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  color: $color-text-4;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
-  background-color: $color-ui-1;
   border: none;
   cursor: pointer;
 
@@ -16,21 +14,17 @@
     line-height: 26px;
   }
 
-  &:hover {
-    background-color: $color-ui-2;
-  }
-
-  &--accent {
-    color: $color-text-1;
-    background-color: $color-accent-1;
+  &--primary {
+    color: #ffffff;
+    background-color: #68b738;
 
     &:hover {
-      background-color: $color-accent-2;
+      background-color: #5eaa2f;
     }
 
     &:active {
-      color: rgba($color-text-1, 0.3);
-      background-color: $color-accent-2;
+      color: rgba(#68b738, 0.3);
+      background-color: #5eaa2f;
     }
   }
 }
