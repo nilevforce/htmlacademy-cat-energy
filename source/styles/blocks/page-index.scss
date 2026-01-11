@@ -56,6 +56,20 @@
   }
 }
 
+.page-index__header .header__menu-link {
+  @media (min-width: $desktop-width) {
+    color: #ffffff;
+  }
+}
+
+.page-index__header .header__menu-link.is-active {
+  @media (min-width: $desktop-width) {
+    &::after {
+      border-color: #ffffff;
+    }
+  }
+}
+
 .page-index__services {
   margin-bottom: 20px;
 
