@@ -1,9 +1,87 @@
 .catalog__title {
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0;
   font-family: $font-secondary;
-  font-size: 60px;
-  line-height: 60px;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 84px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+.catalog__list {
+  display: grid;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 60px 80px;
+  }
 }
 
 .catalog__item {
-  background-color: #f2f2f2;
+  position: relative;
+  padding: 20px 0 25px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 100vw;
+    height: 1px;
+    background-color: #ebebeb;
+    transform: translateX(-50%);
+  }
+
+  &:last-child::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 100vw;
+    height: 1px;
+    background-color: #ebebeb;
+    transform: translateX(-50%);
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 10px 37px 40px;
+    background: linear-gradient(to bottom, transparent 80px, #f2f2f2 0);
+
+    &::before,
+    &:last-child::after {
+      width: 0;
+      height: 0;
+    }
+  }
+
+  &:has(.catalog__load-more-card) {
+    padding: 25px 0;
+
+    @media (min-width: $tablet-width) {
+      padding: 0;
+      padding-top: 80px; // Паддинг равен высоте прозрачной области фона
+      background: none;
+    }
+  }
+}
+
+.catalog__load-more-card {
+  @media (min-width: $tablet-width) {
+    padding: 50px 37px 40px;
+    border: 2px solid #f2f2f2;
+  }
 }
