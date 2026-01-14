@@ -20,6 +20,11 @@
   }
 }
 
+.product-card__link {
+  color: inherit;
+  text-decoration: none;
+}
+
 .product-card__image {
   grid-area: image;
   text-align: center;
@@ -89,7 +94,7 @@
 .product-card__button {
   grid-area: button;
   margin-top: 17px;
-  min-height: 40px;
+  padding: 10px 0;
 
   @media (min-width: $tablet-width) {
     margin-top: 32px;
