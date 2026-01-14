@@ -13,7 +13,10 @@
       "content"
       "button";
     height: 100%;
+    padding: 10px 37px 40px;
     text-align: center;
+    overflow-wrap: anywhere;
+    background: linear-gradient(to bottom, transparent 80px, #f2f2f2 0);
   }
 }
 
@@ -51,7 +54,6 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 20px;
-    max-width: 135px; // УДАЛИТЬ
     font-size: 20px;
     line-height: 24px;
   }

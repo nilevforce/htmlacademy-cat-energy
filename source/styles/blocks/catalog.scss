@@ -58,8 +58,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 10px 37px 40px;
-    background: linear-gradient(to bottom, transparent 80px, #f2f2f2 0);
+    padding: 0;
 
     &::before,
     &:last-child::after {
@@ -73,15 +72,9 @@
 
     @media (min-width: $tablet-width) {
       padding: 0;
-      padding-top: 80px; // Паддинг равен высоте прозрачной области фона
+      padding-top: 80px; // Равен высоте прозрачной области фона карточки товара
       background: none;
     }
   }
 }
 
-.catalog__load-more-card {
-  @media (min-width: $tablet-width) {
-    padding: 50px 37px 40px;
-    border: 2px solid #f2f2f2;
-  }
-}
