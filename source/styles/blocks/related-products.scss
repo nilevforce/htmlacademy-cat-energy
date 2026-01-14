@@ -121,6 +121,11 @@
   }
 }
 
+.related-product-card__link {
+  color: inherit;
+  text-decoration: none;
+}
+
 .related-product-card__specs {
   display: flex;
   align-items: center;
@@ -136,7 +141,7 @@
 }
 
 .related-product-card__button {
-  min-height: 40px;
+  padding: 10px 0;
 
   @media (min-width: $tablet-width) and (max-width: $tablet-width-max) {
     grid-column: 1 / -1;
