@@ -66,11 +66,15 @@
   }
 }
 
-
 .newsletter__form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
+    flex-direction: row;
+    gap: 0;
     max-width: 632px;
   }
 

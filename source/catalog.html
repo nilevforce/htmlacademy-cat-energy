@@ -375,11 +375,15 @@
     </section>
 
     <section class="contacts">
-      <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
-      <address class="contacts__address">
-        <p class="contacts__address-street">ул. Большая Конюшенная, д. 19/8</p>
-        <p class="contacts__address-city">Санкт-Петербург</p>
-      </address>
+      <div class="contacts__inner container">
+        <div class="contacts__inner-wrapper">
+          <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
+          <address class="contacts__address">
+            <p class="contacts__address-street">ул. Большая Конюшенная, д. 19/8</p>
+            <p class="contacts__address-city">Санкт-Петербург</p>
+          </address>
+        </div>
+      </div>
       <div class="contacts__map map">
         <picture>
           <source type="image/jpeg" media="(min-width: 1440px)" srcset="./images/map-desktop@1x.jpg, ./images/map-desktop@2x.jpg 2x" width="1440" height="400">
@@ -390,37 +394,39 @@
     </section>
   </main>
 
-  <footer class="main-footer">
-    <a class="main-footer__logo logo" href="index.html">
-      <img class="logo__image logo__image--text" src="images/logo-text.svg" width="128" height="24" alt="Cat Energy.">
-    </a>
-
-    <section class="main-footer__socials socials">
-      <h2 class="visually-hidden">Мы в социальных сетях</h2>
-      <ul class="socials__list">
-        <li class="socials__item">
-          <a class="socials__link socials__link--vk" href="#">
-            <span class="visually-hidden">ВКонтакте</span>
-          </a>
-        </li>
-        <li class="socials__item">
-          <a class="socials__link socials__link--youtube" href="#">
-            <span class="visually-hidden">Ютуб</span>
-          </a>
-        </li>
-        <li class="socials__item">
-          <a class="socials__link socials__link--telegram" href="#">
-            <span class="visually-hidden">Телеграм</span>
-          </a>
-        </li>
-      </ul>
-    </section>
-
-    <div class="main-footer__developer">
-      <a class="developer-logo" href="#">
-        <span class="developer-logo__text">HTML Academy</span>
-        <span class="developer-logo__icon" aria-hidden="true"></span>
+  <footer class="page-index__footer footer">
+    <div class="footer__inner container">
+      <a class="footer__logo logo" href="index.html">
+        <img class="logo__image logo__image--text" src="images/logo-text.svg" width="128" height="24" alt="Cat Energy.">
       </a>
+
+      <section class="footer__socials">
+        <h2 class="visually-hidden">Мы в социальных сетях</h2>
+        <ul class="footer__socials-list">
+          <li class="footer__socials-item">
+            <a class="footer__socials-link footer__socials-link--vk" href="#">
+              <span class="visually-hidden">ВКонтакте</span>
+            </a>
+          </li>
+          <li class="footer__socials-item">
+            <a class="footer__socials-link footer__socials-link--youtube" href="#">
+              <span class="visually-hidden">Ютуб</span>
+            </a>
+          </li>
+          <li class="footer__socials-item">
+            <a class="footer__socials-link footer__socials-link--telegram" href="#">
+              <span class="visually-hidden">Телеграм</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <div class="footer__developer">
+        <a class="footer__developer-link" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="footer__developer-text">HTML Academy</span>
+          <span class="footer__developer-icon" aria-hidden="true"></span>
+        </a>
+      </div>
     </div>
   </footer>
 </body>
