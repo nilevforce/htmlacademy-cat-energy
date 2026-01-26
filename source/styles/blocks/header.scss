@@ -1,0 +1,150 @@
+.header__body {
+  position: relative;
+}
+
+.header__body-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 64px;
+  padding: 14px 0;
+
+  @media (min-width: $tablet-width) {
+    gap: 10px;
+    padding: 25px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 55px 0;
+  }
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  gap: 56px;
+
+  @media (min-width: $tablet-width) {
+    gap: 13px;
+  }
+}
+
+.header__menu {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.header__menu.is-open {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  background-color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    position: static;
+    width: auto;
+  }
+}
+
+.header__menu-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 34px;
+  }
+}
+
+.header__menu-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 22px 10px;
+  font-family: $font-secondary;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  border-bottom: 1px solid #e6e6e6;
+
+  &:first-child {
+    border-top: 1px solid #e6e6e6;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    font-size: 18px;
+    line-height: 24px;
+    border: none;
+
+    &:first-child {
+      border: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.header__menu-link {
+  color: #000000;
+  text-decoration: none;
+}
+
+.header__menu-link.is-active {
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      position: absolute;
+      content: "";
+      top: calc(100% + 7px);
+      left: 0;
+      width: 100%;
+      border-bottom: 2px solid #68b738;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      top: calc(100% + 12px);
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      border-bottom: 2px solid #68b738;
+    }
+  }
+}
+
+.header__button-burger {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}

@@ -1,11 +1,95 @@
+.newsletter__inner-content {
+  @media (min-width: $tablet-width) {
+    max-width: 632px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 100%;
+  }
+}
+
 .newsletter__title {
+  position: relative;
+  width: fit-content;
+  margin: 0 0 32px;
+  padding-right: 40px;
   font-family: $font-secondary;
-  font-size: 40px;
-  line-height: 40px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  background-color: #ffffff;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: -1;
+    width: 50vw;
+    height: 2px;
+    background-color: #68b738;
+    box-shadow: 50vw 0 0 #68b738;
+    transform: translateY(-50%);
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 66px;
+    padding: 0 40px;
+    font-size: 32px;
+    line-height: 32px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 0;
+      z-index: -1;
+      width: 100vw;
+      height: 2px;
+      background-color: #68b738;
+      transform: translateY(-50%);
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / -1;
+    margin-left: -40px;
+    margin-bottom: 72px;
+    font-size: 40px;
+    line-height: 40px;
+  }
 }
 
 .newsletter__description {
+  margin: 0;
+  margin-bottom: 24px;
+  padding: 0;
   font-family: $font-secondary;
-  font-size: 24px;
-  line-height: 32px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+
+.newsletter__form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    gap: 0;
+    max-width: 632px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 752px;
+  }
 }

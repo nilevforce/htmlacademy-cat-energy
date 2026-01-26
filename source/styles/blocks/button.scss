@@ -1,53 +1,37 @@
 .button {
+  margin: 0;
+  padding: 0;
   font-family: $font-secondary;
-  font-size: 20px;
   font-weight: 400;
-  line-height: 26px;
-  color: #ffffff;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
   text-transform: uppercase;
   text-decoration: none;
-  background-color: #68b738;
+  color: #444444;
   border: none;
   cursor: pointer;
 
-  &--ghost {
-    color: #000000;
-    background-color: transparent;
+  &:hover {
+    background-color: #ebebeb;
   }
-}
 
-.button-burger {
-  width: 24px;
-  height: 24px;
-  background-image: url("../../icons/stack.svg#burger-button");
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
+  &:active {
+    color: rgba(#444444, 0.3);
+    background-color: #ebebeb;
+  }
 
-  &.is-open {
-    position: relative;
-    background-image: none;
+  &--primary {
+    color: #ffffff;
+    background-color: #68b738;
 
-    &::before {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      width: 24px;
-      height: 1.5px;
-      content: "";
-      background-color: #000000;
-      transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    &:hover {
+      background-color: #5eaa2f;
     }
-  }
 
-  &::after {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 24px;
-    height: 1.5px;
-    content: "";
-    background-color: #000000;
-    transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+    &:active {
+      color: rgba(#ffffff, 0.3);
+      background-color: #5eaa2f;
+    }
   }
 }

@@ -1,10 +1,35 @@
-.slider-compare__button {
+.slider-compare {
+  --pos: 50%;
+
   position: relative;
+}
+
+.slider-compare__image {
+  position: absolute;
+  width: 100%;
+  pointer-events: none;
+
+  img,
+  picture {
+    width: 100%;
+  }
+
+  &--before {
+    clip-path: inset(0 calc(100% - var(--pos)) 0 0);
+  }
+
+  &--after {
+    clip-path: inset(0 0 0 var(--pos));
+  }
+}
+
+.slider-compare__button {
+  position: absolute;
+  left: var(--pos);
   display: block;
-  margin-left: 100px;
   padding: 0;
   width: 4px;
-  height: 512px;
+  height: 256px;
   background-color: #666666;
   border: none;
   border-radius: 2px;
@@ -46,5 +71,10 @@
 
   &:hover::after {
     background-color: #5eaa2f;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 4px;
+    height: 512px;
   }
 }

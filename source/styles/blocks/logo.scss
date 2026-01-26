@@ -1,6 +1,7 @@
 .logo {
-  color: transparent;
-  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 4px;
 
   &:hover {
     opacity: 0.8;
