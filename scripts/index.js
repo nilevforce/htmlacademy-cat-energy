@@ -1,0 +1,1 @@
+var n=document.querySelector(".header__menu"),e=document.querySelector(".header__button-burger");n.classList.remove("header__menu--nojs");e.addEventListener("click",()=>{n.classList.toggle("is-open"),e.classList.toggle("is-open")});
