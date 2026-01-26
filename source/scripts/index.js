@@ -1,3 +1,4 @@
+// Управление кликом на бургер меню
 const navMain = document.querySelector('.header__menu');
 const navToggle = document.querySelector('.header__button-burger');
 

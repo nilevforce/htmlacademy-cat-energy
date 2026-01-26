@@ -8,7 +8,7 @@
   font-weight: 400;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 84px;
+    margin-bottom: 83px;
     font-size: 60px;
     line-height: 60px;
   }
@@ -27,7 +27,7 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 1fr);
-    gap: 60px 80px;
+    gap: 65px 80px;
   }
 }
 

@@ -1,7 +1,7 @@
 .services-card {
   position: relative;
   height: 100%;
-  padding: 30px 20px;
+  padding: 30px 20px 18px;
   background-color: #f2f2f2;
 
 
@@ -59,7 +59,7 @@
 
     @media (min-width: $tablet-width) and (max-width: $tablet-width-max) {
       &::before {
-        top: 50%;
+        top: calc(50% + 7px);
         right: 30px;
         left: auto;
         width: 268px;
@@ -89,7 +89,7 @@
 
 .services-card__title {
   margin: 0;
-  margin-bottom: 22px;
+  margin-bottom: 29px;
   padding: 0;
   padding-left: 70px;
   font-family: $font-secondary;
@@ -116,7 +116,7 @@
 .services-card__description {
   margin: 0;
   margin-bottom: 15px;
-  padding: 0 0 23px;
+  padding: 0 0 22px;
   font-size: 14px;
   line-height: 18px;
   border-bottom: 1px solid #d9d9d9;
@@ -136,12 +136,17 @@
 
 .services-card__button {
   position: relative;
+  display: inline-block;
   min-width: 133px;
   padding: 4px 47px 4px 0;
+  font-size: 16px;
+  line-height: 16px;
   color: #000000;
 
   @media (min-width: $tablet-width) {
     padding: 4px 57px 4px 0;
+    font-size: 20px;
+    line-height: 30px;
   }
 
   &::after {

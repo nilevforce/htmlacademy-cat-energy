@@ -1,3 +1,14 @@
+.newsletter__inner-content {
+  @media (min-width: $tablet-width) {
+    max-width: 632px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 100%;
+  }
+}
+
 .newsletter__title {
   position: relative;
   width: fit-content;

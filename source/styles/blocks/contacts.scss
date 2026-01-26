@@ -18,12 +18,13 @@
   }
 
   @media (min-width: $desktop-width) {
-    gap: 87px;
+    gap: 80px;
     position: absolute;
-    top: 50%;
-    padding: 60px 80px;
+    top: 95px;
+    max-height: calc(100% - 95px);
+    padding: 60px 65px 60px 80px;
     background-color: #ffffff;
-    transform: translateY(-50%);
+    overflow-y: auto;
   }
 }
 
@@ -34,6 +35,7 @@
   font-family: $font-secondary;
   font-size: 16px;
   line-height: 20px;
+  color: #111111;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
@@ -48,11 +50,17 @@
   font-size: 14px;
   line-height: 20px;
   font-style: normal;
+  color: #444444;
 
   @media (min-width: $tablet-width) {
     max-width: 170px;
     font-size: 16px;
     line-height: 20px;
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
   }
 }
 

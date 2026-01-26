@@ -1,6 +1,6 @@
 .roadmap {
   @media (min-width: $tablet-width) and (max-width: $tablet-width-max) {
-    padding-bottom: 60px;
+    padding-bottom: 54px;
     border-bottom: 1px solid #e6e6e6;
   }
 }
@@ -12,7 +12,7 @@
   font-family: $font-secondary;
   font-weight: 400;
   font-size: 36px;
-  line-height: 36px;
+  line-height: 40px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 72px;

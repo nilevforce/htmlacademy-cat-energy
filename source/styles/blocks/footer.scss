@@ -6,7 +6,7 @@
     padding: 55px 0;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     padding: 65px 0;
   }
 }
@@ -29,6 +29,7 @@
 
   @media (min-width: $tablet-width) {
     justify-content: flex-start;
+    width: auto;
     padding: 0;
     border: none;
   }
@@ -38,6 +39,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 24px;
   width: 100%;
   margin: 0;
@@ -99,6 +101,7 @@
   padding-top: 20px;
 
   @media (min-width: $tablet-width) {
+    justify-content: flex-end;
     padding: 0;
   }
 }
@@ -112,6 +115,7 @@
   text-decoration: none;
 
   @media (min-width: $tablet-width) {
+    width: auto;
     justify-content: flex-end;
   }
 
@@ -136,6 +140,7 @@
 }
 
 .footer__developer-icon {
+  flex-shrink: 0;
   width: 27px;
   height: 34px;
   background-color: #666666;

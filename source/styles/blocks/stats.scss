@@ -3,13 +3,13 @@
   background: linear-gradient(to top, #eaeaea 0%, #eaeaea 100%);
 
   @media (min-width: $tablet-width) {
-    padding: 0 0 100px;
-    background: linear-gradient(to top, #eaeaea 462px, transparent 462px);
+    padding: 0 0 104px;
+    background: linear-gradient(to top, #eaeaea 462px, transparent 0);
   }
 
-  @media (min-width: $tablet-width) {
-    padding: 0 0 85px;
-    background: linear-gradient(to top, #eaeaea 462px, transparent 462px);
+  @media (min-width: $desktop-width) {
+    padding: 0 0 75px;
+    background: linear-gradient(to top, #eaeaea 462px, transparent 0);
   }
 }
 
@@ -25,7 +25,7 @@
 
 .stats__content-wrapper {
   @media (min-width: $desktop-width) {
-    max-width: 436px;
+    max-width: 432px;
   }
 }
 
@@ -62,20 +62,24 @@
     font-size: 16px;
     line-height: 24px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 70px;
+  }
 }
 
 .stats__list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 34px 32px;
-  margin: 0 0 35px;
+  gap: 30px 32px;
+  margin: 0 0 20px;
   padding: 0;
   list-style: none;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: (162px 162px auto);
     gap: 60px 42px;
-    margin: 0 0 100px;
+    margin: 0 0 104px;
   }
 
   @media (min-width: $desktop-width) {
@@ -102,6 +106,7 @@
       top: 100%;
       left: 50%;
       padding: 0 15px;
+      max-height: 100px;
       font-weight: 400;
       font-size: 12px;
       line-height: 12px;
@@ -109,6 +114,7 @@
       text-align: center;
       text-transform: lowercase;
       background-color: #eaeaea;
+      overflow-y: hidden;
       transform: translateX(-50%) translateY(-50%);
 
 
@@ -117,7 +123,8 @@
         font-size: 14px;
         line-height: 14px;
         background-color: #ffffff;
-        white-space: nowrap;
+        width: 90%;
+        white-space: wrap;
       }
 
       @media (min-width: $desktop-width) {

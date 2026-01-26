@@ -7,15 +7,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="favicons/180.png">
+  <link rel="apple-touch-icon" href="favicons/180.webp">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="styles/styles.css">
+
+  <link rel="preload" href="./fonts/lato/Lato-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/oswald/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+
   <script src="scripts/index.js" defer></script>
 </head>
 
 <body class="page-index__body">
   <header class="page-index__header header">
-    <div class="header__body">
+    <div class="page-index__header-body header__body">
       <div class="header__body-inner container">
         <a class="header__logo logo" href="index.html" aria-label="Главная страница">
           <picture>
@@ -50,7 +54,7 @@
       </div>
     </div>
 
-    <div class="header__hero hero">
+    <div class="page-index__header-hero header__hero hero">
       <div class="hero__inner container">
         <div class="hero__content-wrapper">
           <h2 class="hero__title">Функциональное питание для котов</h2>
@@ -59,9 +63,9 @@
 
         <div class="hero__image">
           <picture>
-            <source type="image/png" media="(min-width: 1440px)" srcset="./images/hero-can-desktop@1x.png, ./images/hero-can-desktop@2x.png 2x" width="552" height="499">
-            <source type="image/png" media="(min-width: 768px)" srcset="./images/hero-can-tablet@1x.png, ./images/hero-can-tablet@2x.png 2x" width="709" height="609">
-            <img src="./images/hero-can-mobile@1x.png" srcset="./images/hero-can-mobile@2x.png 2x" width="280" height="270" alt="Упаковка еды Cat Energy Pro Курица.">
+            <source type="image/webp" media="(min-width: 1440px)" srcset="./images/hero-can-desktop@1x.webp, ./images/hero-can-desktop@2x.webp 2x" width="552" height="499">
+            <source type="image/webp" media="(min-width: 768px)" srcset="./images/hero-can-tablet@1x.webp, ./images/hero-can-tablet@2x.webp 2x" width="709" height="609">
+            <img src="./images/hero-can-mobile@1x.webp" srcset="./images/hero-can-mobile@2x.webp 2x" width="280" height="270" alt="Упаковка еды Cat Energy Pro Курица.">
           </picture>
         </div>
 
@@ -154,15 +158,15 @@
         <div class="stats__slider slider-compare">
           <div class="slider-compare__image slider-compare__image--before">
             <picture>
-              <source type="image/png" media="(min-width: 768px)" srcset="./images/cat-before-tablet@1x.png, ./images/cat-before-tablet@2x.png 2x" width="560" height="512">
-              <img src="./images/cat-before-mobile@1x.png" srcset="./images/cat-before-mobile@2x.png 2x" alt="Кот до изменений." width="280" height="256">
+              <source type="image/webp" media="(min-width: 768px)" srcset="./images/cat-before-tablet@1x.webp, ./images/cat-before-tablet@2x.webp 2x" width="560" height="512">
+              <img src="./images/cat-before-mobile@1x.webp" loading="lazy" srcset="./images/cat-before-mobile@2x.webp 2x" alt="Кот до изменений." width="280" height="256">
             </picture>
           </div>
 
           <div class="slider-compare__image slider-compare__image--after">
             <picture>
-              <source type="image/png" media="(min-width: 768px)" srcset="./images/cat-after-tablet@1x.png, ./images/cat-after-tablet@2x.png 2x" width="560" height="512">
-              <img src="./images/cat-after-mobile@1x.png" srcset="./images/cat-after-mobile@2x.png 2x" alt="Кот после изменений." width="280" height="256">
+              <source type="image/webp" media="(min-width: 768px)" srcset="./images/cat-after-tablet@1x.webp, ./images/cat-after-tablet@2x.webp 2x" width="560" height="512">
+              <img src="./images/cat-after-mobile@1x.webp" loading="lazy" srcset="./images/cat-after-mobile@2x.webp 2x" alt="Кот после изменений." width="280" height="256">
             </picture>
           </div>
 
@@ -185,9 +189,9 @@
       </div>
       <div class="contacts__map map">
         <picture>
-          <source type="image/jpeg" media="(min-width: 1440px)" srcset="./images/map-desktop@1x.jpg, ./images/map-desktop@2x.jpg 2x" width="1440" height="400">
-          <source type="image/jpeg" media="(min-width: 768px)" srcset="./images/map-tablet@1x.jpg, ./images/map-tablet@2x.jpg 2x" width="768" height="400">
-          <img class="map__image" src="./images/map-mobile@1x.jpg" srcset="./images/map-mobile@2x.jpg 2x" width="320" height="462" alt="Карта расположения офиса компании.">
+          <source type="image/webp" media="(min-width: 1440px)" srcset="./images/map-desktop@1x.webp, ./images/map-desktop@2x.webp 2x" width="1440" height="400">
+          <source type="image/webp" media="(min-width: 768px)" srcset="./images/map-tablet@1x.webp, ./images/map-tablet@2x.webp 2x" width="768" height="400">
+          <img class="map__image" src="./images/map-mobile@1x.webp" srcset="./images/map-mobile@2x.webp 2x" width="320" height="362" alt="Карта расположения офиса компании.">
         </picture>
       </div>
     </section>
@@ -195,9 +199,11 @@
 
   <footer class="page-index__footer footer">
     <div class="footer__inner container">
-      <a class="footer__logo logo" href="index.html">
-        <img class="logo__image logo__image--text" src="images/logo-text.svg" width="128" height="24" alt="Cat Energy.">
-      </a>
+      <div class="footer__logo">
+        <a class="logo" href="index.html">
+          <img class="logo__image logo__image--text" src="images/logo-text.svg" width="128" height="24" alt="Cat Energy.">
+        </a>
+      </div>
 
       <section class="footer__socials">
         <h2 class="visually-hidden">Мы в социальных сетях</h2>

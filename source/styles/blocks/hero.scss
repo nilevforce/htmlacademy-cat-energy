@@ -15,6 +15,7 @@
       "button"
       "image";
     place-items: start;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -24,6 +25,8 @@
       "content image"
       "button  image";
     row-gap: 50px;
+    padding-top: 55px;
+    padding-bottom: 45px;
   }
 }
 
@@ -36,6 +39,10 @@
     max-width: 540px;
     margin-left: 90px;
     text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 80px;
   }
 }
 
@@ -92,18 +99,24 @@
   @media (min-width: $tablet-width) {
     width: auto;
     min-width: 242px;
+    padding: 14px 0;
+    font-size: 20px;
+    line-height: 26px;
     text-align: center;
   }
 }
 
 .hero__image {
   grid-area: image;
+  margin-bottom: 6px;
 
   @media (min-width: $tablet-width) and (max-width: $tablet-width-max) {
-    margin-top: -80px;
+    margin-top: -84px;
+    margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
+    margin-top: -80px;
     margin-left: -160px;
   }
 }
